@@ -2,17 +2,27 @@ from typing import List
 
 # Skeleton code for even_list
 def even_list(int_list: List[int]) -> List[int]:
-  """ Determines if a number is even and return an even list.
-  Args:
+    """ Determines if a number is even and return an even list.
 
-  int_list: A list of integer.
+    Args:
+        int_list: A list of integer.
 
-  Returns:
+    Returns:
+        A list of even integers.
+    """
+    # Initializing an empty list to store the even integers
+    even_int_list = []
+    
+    # Iterating through each integer in the input list
+    for number in int_list:
+        # Evaluating the parity of the integer
+        if number % 2 == 0:
+            # Appending even integers to the new list
+            even_int_list.append(number)
+    
+    # Returning the list of even integers
+    return even_int_list
 
-  A list of even integers. 
-  """
-  # TODO: Implement even_list 
-  pass
 
 # Skeleton code for sum_of_squares_of_even 
 def sum_of_squares_of_even(even_int_list: List[int]) -> int:
